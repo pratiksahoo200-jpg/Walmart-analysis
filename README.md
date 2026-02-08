@@ -79,3 +79,10 @@ The dataset contains transactional sales records including:
 
 ## 📁 Repository Structure
 
+walmart-sales-sql-analysis/
+│
+├── README.md
+├── dataset/
+├── sql/
+├── results/
+└── screenshots/

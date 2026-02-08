@@ -1,0 +1,4 @@
+Payment,avg_transaction_value,rank_by_avg_value
+Cash,326.18188953488357,1
+"Credit card",324.009877813505,2
+Ewallet,318.8206,3

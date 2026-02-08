@@ -1,114 +1,81 @@
-🛒 Walmart Sales Analysis using SQL
-📌 Project Overview
+# 🛒 Walmart Sales Analysis using SQL
 
-This project analyzes Walmart sales data using MySQL 8 with advanced SQL techniques such as:
+## 📌 Project Overview
 
-Common Table Expressions (CTE)
+This project analyzes Walmart sales data using **MySQL 8** with advanced SQL techniques.
 
-Window Functions
+The objective is to extract meaningful business insights related to branch performance, product profitability, customer behavior, and revenue trends.
 
-Ranking Functions
+---
 
-Running Totals
+## 🛠 Tools & Technologies
 
-Analytical Comparisons
+- MySQL 8
+- MySQL Workbench
+- Microsoft Excel
+- SQL (CTE & Window Functions)
 
-The goal of this project is to extract meaningful business insights related to branch performance, product profitability, customer behavior, and revenue trends.
+---
 
-🛠 Tools & Technologies
+## 📂 Dataset Information
 
-MySQL 8
-
-MySQL Workbench
-
-Excel (for result visualization)
-
-SQL (CTE + Window Functions)
-
-📂 Dataset Information
-
-Database: walmart_project
-Table: walmartsalesdata
+**Database:** `walmart_project`  
+**Table:** `walmartsalesdata`
 
 The dataset contains transactional sales records including:
 
-Branch
+- Invoice ID
+- Branch
+- City
+- Customer Type
+- Product Line
+- Payment Method
+- Total Revenue
+- Gross Income
+- Date and Time
+- Customer Rating
 
-City
+---
 
-Product line
+## 🎯 Business Questions Answered
 
-Customer type
+1. Which branch generates the highest revenue?
+2. What is the best-selling product line in each branch?
+3. Which transactions are above the overall average order value?
+4. What is the cumulative revenue growth over months?
+5. What is the peak sales hour in each branch?
+6. Rank product lines based on profitability.
+7. Which payment method generates the highest average transaction value?
+8. Who spends more within each city — Member or Normal customers?
+9. Find top 3 highest revenue transactions in each branch.
+10. Compare each branch revenue against overall average branch revenue.
 
-Payment method
+---
 
-Revenue (Total)
+## 🔎 SQL Concepts Used
 
-Gross income
+- Common Table Expressions (CTE)
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- PARTITION BY
+- Window Functions (OVER())
+- CASE Statements
+- Aggregate Functions (SUM, AVG, COUNT)
+- Date Functions (YEAR, MONTH, HOUR)
 
-Date and Time
+---
 
-Rating
+## 📊 Key Insights
 
-🎯 Business Objectives
+- Branch C generated the highest overall revenue.
+- Food and Beverages was the most profitable product line.
+- Cash transactions showed the highest average transaction value.
+- Members generally spent slightly more than Normal customers.
+- Revenue showed steady cumulative growth over months.
+- Each branch has a distinct peak sales hour.
 
-Identify the highest-performing branch by revenue.
+---
 
-Determine the best-selling product line in each branch.
+## 📁 Repository Structure
 
-Classify transactions as above or below average order value.
-
-Analyze cumulative revenue growth over time.
-
-Identify peak sales hours per branch.
-
-Rank product lines by profitability.
-
-Evaluate payment methods based on average transaction value.
-
-Compare customer spending behavior within each city.
-
-Identify top 3 highest revenue transactions per branch.
-
-Compare branch revenue against overall branch average.
-
-🔎 Key Analytical Questions & Insights
-1️⃣ Which branch generates the highest revenue?
-
-Branch C ranked first based on total revenue.
-
-2️⃣ What is the best-selling product line in each branch?
-
-Each branch has a different top-performing product category based on revenue contribution.
-
-3️⃣ Which transactions are above average order value?
-
-Transactions were classified using a CASE statement and overall average comparison.
-
-4️⃣ What is the cumulative revenue growth?
-
-Running total analysis shows steady revenue growth across months.
-
-5️⃣ What is the peak sales hour in each branch?
-
-Each branch has a distinct peak hour contributing the highest revenue.
-
-6️⃣ Which product line is most profitable?
-
-Food and Beverages ranked highest based on total gross income.
-
-7️⃣ Which payment method generates highest average transaction value?
-
-Cash transactions showed the highest average transaction value.
-
-8️⃣ Who spends more within each city?
-
-Members generally spend slightly more than Normal customers.
-
-9️⃣ Top 3 highest revenue transactions per branch
-
-Window functions were used to rank transactions per branch.
-
-🔟 Branch revenue comparison with overall average
-
-Branch C performs above the overall branch revenue average, while others fall slightly below.
